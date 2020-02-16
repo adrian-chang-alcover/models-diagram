@@ -10,7 +10,7 @@ services:
       - "5678:5678"
     volumes:
       - odoo-web-data:/var/lib/odoo
-      # - openerp-server.conf:/etc/odoo/openerp-server.conf:ro
+      - ./openerp-server.conf:/etc/odoo/openerp-server.conf:ro
       - ./:/mnt/extra-addons:ro
 
   db:
